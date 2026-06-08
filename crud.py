@@ -16,7 +16,7 @@ def create_transaction(transaction:TransactionCreate):
 
 
 
-def create_block(block: BlockCreate):
+def create_block(block: BlockCreate): # типизация 
 
     hash = hashlib.sha256(str(block.model_dump()).encode()).hexdigest()
     new_b = {
